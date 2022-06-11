@@ -126,7 +126,7 @@ details {
 }
 
 details:hover {
-    background-color: rgba(255, 225, 144, 0.486);
+    background-color: rgba(253, 216, 174, 0.589);
 
 }
 
@@ -141,6 +141,8 @@ details p {
 .single_img{
     display: flex;
     margin: auto auto 1.25rem auto;
+    min-width: 500px;
+    max-width: 500px;
 }
 
 summary {
@@ -155,4 +157,8 @@ summary {
     margin: 40px auto 40px auto;
     align-items: center;
     justify-content: center;
+}
+
+iframe{
+margin: auto;
 }
