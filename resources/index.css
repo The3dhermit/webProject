@@ -12,6 +12,8 @@ body {
     --title-gradient1: #FFFFFF;
     --title-gradient2: #FFFDE2;
     --main-color: #606060;
+    --footer_color:#bdada25d;
+    --invert: invert(0%);
 
 }
 
@@ -23,6 +25,8 @@ body.night {
     --title-gradient1: #4F5E70;
     --title-gradient2: #25303B;
     --main-color: #DEDEDE;
+    --footer_color:#303c4a;
+    --invert: invert(85%);
 }
 
 .logo {
@@ -81,9 +85,13 @@ nav {
 
 .nightBut {
     display: flex;
+    position: fixed;
     max-width: 40px;
-    margin-left: 40px;
+    margin-left: -70px;
     cursor: pointer;
+    filter: var(--invert);
+    border: black solid 2px;
+    border-radius: 10px;
 }
 
 ul {
@@ -171,6 +179,7 @@ summary {
 
 .imgcontainer img {
     max-height: 250px;
+    
 }
 
 .imgcontainer {
@@ -182,4 +191,33 @@ summary {
 
 iframe {
     margin: auto;
+}
+footer{
+    min-height: 200px;
+    background-color:var(--footer_color) ;
+}
+
+.footer{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.iconConteiner{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: column;
+    margin-top: 30px;
+    
+}
+.footerIcon{
+    max-width: 30px;
+    border: solid black 3px;
+    border-radius: 50%;
+    padding: 5px;
+    filter: var(--invert);
+}
+footer h4{
+    margin: 10px 10px;
+    color: var(--pText-color);
 }
